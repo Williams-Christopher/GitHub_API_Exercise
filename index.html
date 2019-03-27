@@ -16,11 +16,11 @@
     <main>
         <form>
             <label for="js-user-name">GitHub user handle: </label>
-            <input type="text" name="user-handle" id="js-user-handle">
+            <input type="text" name="user-handle" id="js-user-handle" placeholder="GitHub Handle" required>
             <input type="submit" value="Find">
         </form>
         <section>
-            <p id="js-error" class="hidden"></p>
+            <p id="js-error" class="error hidden"></p>
             <ul id="js-results" class="hidden">
                 <!-- Dynamically fill in the results as <li> elements -->
             </ul>
