@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>GitHub API - Repo Search by User</h1>
+        <p>Submitted solution for Module 11, Checkpoint 6</p>
+    </header>
+    <main>
+        <form>
+            <label for="js-user-name">GitHub user handle: </label>
+            <input type="text" name="user-handle" id="js-user-handle">
+            <input type="submit" value="Find">
+        </form>
+        <section>
+            <p id="js-error" class="hidden"></p>
+            <ul id="js-results" class="hidden">
+                <!-- Dynamically fill in the results as <li> elements -->
+            </ul>
+        </section>
+    </main>
     
     <script src="index.js"></script>
 </body>
