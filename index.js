@@ -22,7 +22,7 @@
 */
 
 function updateResults(results) {
-    //console.log(results);
+    console.log(results);
 
     cleanUpResultsDisplay();
 
@@ -42,8 +42,9 @@ function updateResults(results) {
 
         // Display repo names and descriptions as href anchor text
         results.forEach(result => {
+            let resultDesc = result.description === null ? `[No user provided description]` : `${result.description}`;
             $('#js-results').append(
-                `<li><a href="${result.html_url}" target='_empty'>${result.full_name} :: ${result.description}</a></li>`
+                `<li><a href="${result.html_url}" target='_empty'>${result.full_name} :: ${resultDesc}</a></li>`
             )
         });
     }
