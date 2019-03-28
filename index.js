@@ -5,7 +5,7 @@
     const options = {
         headers: new Headers(
             {'Accept': 'application/vnd.github.v3+json'},
-            {'User-Agent': 'Williams-Christopher:GitHubUserRepoSearch'}
+            //{'User-Agent': 'Williams-Christopher:GitHubUserRepoSearch'}
         )
     };
 
