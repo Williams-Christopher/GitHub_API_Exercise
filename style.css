@@ -4,6 +4,12 @@
 
 ul {
     list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+li {
+    line-height: 1.25rem;
 }
 
 .hidden {
@@ -12,4 +18,12 @@ ul {
 
 .error {
     color: red;
+}
+
+img {
+    margin-top: 16px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
 }
